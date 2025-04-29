@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://localhost:3000", allowCredentials = "true")
+@CrossOrigin(origins = "https://alumni-frontend-bger.onrender.com", allowCredentials = "true")
 public class UserController {
 
     @Autowired

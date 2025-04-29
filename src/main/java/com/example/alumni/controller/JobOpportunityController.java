@@ -14,7 +14,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/jobs")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://alumni-frontend-bger.onrender.com")
 public class JobOpportunityController {
     @Autowired
     private UserPointsService userPointsService;

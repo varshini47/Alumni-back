@@ -13,7 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/chat/groups")
-@CrossOrigin(origins = "http://localhost:3000", allowCredentials = "true")
+@CrossOrigin(origins = "https://alumni-frontend-bger.onrender.com", allowCredentials = "true")
 public class GroupController {
     @Autowired
     private GroupService groupService;

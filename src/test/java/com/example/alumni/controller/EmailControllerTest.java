@@ -149,7 +149,7 @@ class EmailControllerTest {
         request.put("fromEmail", "sender@example.com");
         request.put("toEmails", Arrays.asList("recipient1@example.com", "recipient2@example.com"));
         request.put("name", "John Doe");
-        request.put("registrationLink", "http://localhost:3000/register");
+        request.put("registrationLink", "https://alumni-frontend-bger.onrender.com/register");
 
         doNothing().when(emailService).sendInvite(anyString(), anyList(), anyString(), anyString());
         when(userPointsService.getPoints(anyLong())).thenReturn(100);
@@ -174,7 +174,7 @@ class EmailControllerTest {
         request.put("fromEmail", "sender@example.com");
         request.put("toEmails", Arrays.asList("recipient1@example.com", "recipient2@example.com"));
         request.put("name", "John Doe");
-        request.put("registrationLink", "http://localhost:3000/register");
+        request.put("registrationLink", "https://alumni-frontend-bger.onrender.com/register");
 
         doThrow(new MessagingException("Failed to send email")).when(emailService)
                 .sendInvite(anyString(), anyList(), anyString(), anyString());

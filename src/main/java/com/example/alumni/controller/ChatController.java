@@ -29,7 +29,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/chat")
-@CrossOrigin(origins = "http://localhost:3000") // Enable CORS for frontend
+@CrossOrigin(origins = "https://alumni-frontend-bger.onrender.com") // Enable CORS for frontend
 public class ChatController {
 
     @Autowired

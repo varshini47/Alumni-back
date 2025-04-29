@@ -18,7 +18,7 @@ import java.util.*;
 
 @RestController
 @RequestMapping("/api/email")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://alumni-frontend-bger.onrender.com")
 @SessionAttributes("resetSession")
 public class EmailController {
 
@@ -56,7 +56,7 @@ User user = userOptional.get();
         System.out.println("/n/n"+user.getId());
 
     // Send reset link
-    String resetLink = "http://localhost:3000/reset-password?userId=" + user.getId();
+    String resetLink = "https://alumni-frontend-bger.onrender.com/reset-password?userId=" + user.getId();
     emailService.sendResetEmail(user.getEmail(), resetLink);
 
     return ResponseEntity.ok("Password reset link sent successfully!");

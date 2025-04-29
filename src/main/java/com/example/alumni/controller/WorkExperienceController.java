@@ -12,7 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/work-experience")
-@CrossOrigin(origins = "http://localhost:3000") // Enable CORS for frontend
+@CrossOrigin(origins = "https://alumni-frontend-bger.onrender.com") // Enable CORS for frontend
 public class WorkExperienceController {
     @Autowired
     private UserPointsService userPointsService;

@@ -12,7 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/events")
-@CrossOrigin(origins = "http://localhost:3000") // Enable CORS for frontend
+@CrossOrigin(origins = "https://alumni-frontend-bger.onrender.com") // Enable CORS for frontend
 public class EventController {
 
     @Autowired

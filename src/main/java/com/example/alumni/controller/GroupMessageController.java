@@ -18,7 +18,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/chat")
-@CrossOrigin(origins = "http://localhost:3000", allowCredentials = "true")
+@CrossOrigin(origins = "https://alumni-frontend-bger.onrender.com", allowCredentials = "true")
 
 public class GroupMessageController {
 

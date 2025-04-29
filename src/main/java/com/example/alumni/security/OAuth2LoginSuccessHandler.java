@@ -40,7 +40,7 @@ public class OAuth2LoginSuccessHandler implements AuthenticationSuccessHandler {
         if (existingUser != null) {
             // If user exists, store the user in the session
             session.setAttribute("user", existingUser);
-            response.sendRedirect("http://localhost:3000/login");  // Redirect to login page
+            response.sendRedirect("https://alumni-frontend-bger.onrender.com/login");  // Redirect to login page
         } else {
             // If user doesn't exist, create a new user and store in session
             User newUser = new User();
@@ -59,7 +59,7 @@ public class OAuth2LoginSuccessHandler implements AuthenticationSuccessHandler {
            // userRepository.save(newUser);  // Save the new user to the database
 
             session.setAttribute("user", newUser);  // Store the new user in the session
-            response.sendRedirect("http://localhost:3000/complete-profile");  // Redirect to complete profile page
+            response.sendRedirect("https://alumni-frontend-bger.onrender.com/complete-profile");  // Redirect to complete profile page
         }
     }
 }

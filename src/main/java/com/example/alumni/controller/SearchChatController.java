@@ -14,7 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/searchchat")
-@CrossOrigin(origins = "http://localhost:3000", allowCredentials = "true")
+@CrossOrigin(origins = "https://alumni-frontend-bger.onrender.com", allowCredentials = "true")
 public class SearchChatController {
 
      @Autowired

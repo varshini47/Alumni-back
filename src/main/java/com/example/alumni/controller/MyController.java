@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://localhost:3000") // Allow requests from React frontend
+@CrossOrigin(origins = "https://alumni-frontend-bger.onrender.com") // Allow requests from React frontend
 public class MyController {
 
     @GetMapping("/hello")

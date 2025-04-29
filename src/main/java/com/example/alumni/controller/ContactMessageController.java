@@ -13,7 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/contact")
-@CrossOrigin(origins = "http://localhost:3000") // Adjust as needed
+@CrossOrigin(origins = "https://alumni-frontend-bger.onrender.com") // Adjust as needed
 public class ContactMessageController {
 
     @Autowired

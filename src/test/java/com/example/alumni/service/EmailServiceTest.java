@@ -30,7 +30,7 @@ class EmailServiceTest {
     void sendResetEmail_success() {
         // Arrange
         String toEmail = "test@example.com";
-        String resetLink = "http://localhost:3000/reset-password";
+        String resetLink = "https://alumni-frontend-bger.onrender.com/reset-password";
 
         // Act
         emailService.sendResetEmail(toEmail, resetLink);
@@ -45,7 +45,7 @@ class EmailServiceTest {
         String fromEmail = "sender@example.com";
         List<String> toEmails = Arrays.asList("recipient1@example.com", "recipient2@example.com");
         String name = "John Doe";
-        String registrationLink = "http://localhost:3000/register";
+        String registrationLink = "https://alumni-frontend-bger.onrender.com/register";
 
         MimeMessage mimeMessage = mock(MimeMessage.class);
         when(mailSender.createMimeMessage()).thenReturn(mimeMessage);
@@ -64,7 +64,7 @@ class EmailServiceTest {
         String fromEmail = "sender@example.com";
         List<String> toEmails = Arrays.asList("", "recipient@example.com", null);
         String name = "John Doe";
-        String registrationLink = "http://localhost:3000/register";
+        String registrationLink = "https://alumni-frontend-bger.onrender.com/register";
 
         MimeMessage mimeMessage = mock(MimeMessage.class);
         when(mailSender.createMimeMessage()).thenReturn(mimeMessage);

@@ -45,7 +45,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         registry.addEndpoint("/chat","/chat/*") // WebSocket endpoint
-                .setAllowedOrigins("http://localhost:3000") // Allow frontend requests
+                .setAllowedOrigins("https://alumni-frontend-bger.onrender.com") // Allow frontend requests
                 .withSockJS(); // Enable SockJS fallback for browser compatibility
     }
 }

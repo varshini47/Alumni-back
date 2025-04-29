@@ -12,7 +12,7 @@ import java.util.*;
 
 @RestController
 @RequestMapping("/api/gallery")
-@CrossOrigin(origins = "http://localhost:3000") // Enable CORS for frontend
+@CrossOrigin(origins = "https://alumni-frontend-bger.onrender.com") // Enable CORS for frontend
 public class GalleryController {
 
     @Autowired

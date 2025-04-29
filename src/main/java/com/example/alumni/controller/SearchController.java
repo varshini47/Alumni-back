@@ -14,7 +14,7 @@ import com.example.alumni.service.SearchService;
 
 @RestController
 @RequestMapping("/api/search")
-@CrossOrigin(origins = "http://localhost:3000")// Allow frontend access
+@CrossOrigin(origins = "https://alumni-frontend-bger.onrender.com")// Allow frontend access
 public class SearchController {
 
     @Autowired
