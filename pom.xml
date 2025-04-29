@@ -100,12 +100,16 @@
             <artifactId>google-http-client-jackson2</artifactId>
             <version>1.39.2</version>
         </dependency>
-        <dependency>
+        <!-- <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.33</version>
-            <!--  Make sure to specify a version  -->
             <scope>runtime</scope>
+        </dependency> -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.6.0</version> <!-- Or use the latest version -->
         </dependency>
 
         
