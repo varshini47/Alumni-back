@@ -34,11 +34,6 @@ public class UserController {
     @Autowired
     private BCryptPasswordEncoder passwordEncoder;
 
-
-   
-
-
-
     @GetMapping("/searchchat")
     public List<User> searchUsers(@RequestParam String query)
     {
