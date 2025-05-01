@@ -67,11 +67,11 @@ public class SecurityConfig {
 
         return http.build();
     }
-    @Bean
-    public CookieSerializer cookieSerializer() {
-        DefaultCookieSerializer serializer = new DefaultCookieSerializer();
-        serializer.setSameSite("None");  // allow cross-site cookie
-        serializer.setUseSecureCookie(true); // must be true for SameSite=None
-        return serializer;
-    }
+    // @Bean
+    // public CookieSerializer cookieSerializer() {
+    //     DefaultCookieSerializer serializer = new DefaultCookieSerializer();
+    //     serializer.setSameSite("None");  // allow cross-site cookie
+    //     serializer.setUseSecureCookie(true); // must be true for SameSite=None
+    //     return serializer;
+    // }
 }
