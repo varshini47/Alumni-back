@@ -18,7 +18,10 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "https://alumni-frontend-bger.onrender.com", allowCredentials = "true")
+@CrossOrigin(origins = {"https://alumni-frontend-bger.onrender.com", "https://accounts.google.com"}, 
+            allowCredentials = "true",
+            methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE},
+            allowedHeaders = "*")
 public class UserController {
 
     @Autowired
@@ -33,6 +36,11 @@ public class UserController {
 
     @Autowired
     private BCryptPasswordEncoder passwordEncoder;
+
+
+   
+
+
 
     @GetMapping("/searchchat")
     public List<User> searchUsers(@RequestParam String query)

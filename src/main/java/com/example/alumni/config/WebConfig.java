@@ -11,9 +11,10 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**") // Apply CORS to all endpoints
-                .allowedOrigins("https://alumni-frontend-bger.onrender.com") // Allow frontend requests
+                .allowedOrigins("https://alumni-frontend-bger.onrender.com", "https://accounts.google.com") // Allow both frontend and Google OAuth
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
-                .allowCredentials(true);
+                .allowCredentials(true)
+                .exposedHeaders("Authorization"); // Expose Authorization header
     }
 }
