@@ -58,7 +58,11 @@ public class OAuth2LoginSuccessHandler implements AuthenticationSuccessHandler {
             newUser.setLastName(last_name);  // Set the name
            // userRepository.save(newUser);  // Save the new user to the database
 
-            session.setAttribute("user", newUser);  // Store the new user in the session
+            session.setAttribute("user", newUser); // Store the new user in the session
+             User sessionUser = (User) session.getAttribute("user");
+            System.out.println(sessionUser);
+            System.out.println("kkk");
+            
             response.sendRedirect("https://alumni-frontend-bger.onrender.com/complete-profile");  // Redirect to complete profile page
         }
     }
